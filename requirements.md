@@ -9,8 +9,8 @@
   style in JS.
 - Make sure the code is reusable! `You should be able to create multiple drop-downs on a page without repeating the JavaScript code.`
 - If you bundle your code into a module you can publish it to npm
-  and then install and use it anytime you like! Nothing like publishing your own
-  modules to make you feel like a pro 😎.
+  and then install and use it anytime you like! Nothing like publishing
+  your own modules to make you feel like a pro 😎.
 
 _Discoveries_
 

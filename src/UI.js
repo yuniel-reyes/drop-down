@@ -1,7 +1,7 @@
 export default class DROP_DOWN {
   constructor(nav_bar1) {
     this.nav_bar1 = nav_bar1;
-    console.log(this.nav_bar1);
+    // console.log(this.nav_bar1);
     this.dropDown = document.querySelectorAll('.bar1');
 
     this.setBarStyle();
@@ -31,7 +31,7 @@ export default class DROP_DOWN {
             this.removeBlue(eachChild);
             this.hideDrop(eachChild);
           }
-        }, 2);
+        }, 3);
       });
     }
   }
@@ -99,9 +99,11 @@ export default class DROP_DOWN {
     });
   }
 
-  hideDrop(element) {
+  hideDrop(eachChild) {
     this.dropDown.forEach((eachDown) => {
-      if (element.className.slice(10).trim() === eachDown.className.slice(5)) {
+      if (
+        eachChild.className.slice(10).trim() === eachDown.className.slice(5)
+      ) {
         eachDown.style.visibility = 'hidden';
       }
     });
